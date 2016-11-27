@@ -53,14 +53,14 @@ int main(void) {
     // CTC mode. Top value in ICR1 - WGM13:0 = 12
     TCCR1B |= (1 << WGM12) | (1 << WGM13);
 
-    // Enable overflow interrupt
+    // Enable input capture interrupt
     TIMSK1 |= (1 << ICIE1);
 
     // Value for ICR1
     // This defines our fs = 123kHz!
     ICR1 = 130;
 
-    // Prescaler 8 & start the timer
+    // Prescaler 1 & start the timer
     TCCR1B |= (1 << CS10);
 
     // enable interrupts
