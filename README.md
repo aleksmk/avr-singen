@@ -19,3 +19,7 @@ fsine = (M * fs)/2^n
 DAC
 ------------
 On the output of PORTD (8-bit) there is a 8-bit R-2R ladder, made up of resistors. You can read more about this type of DAC on wikipedia : https://en.wikipedia.org/wiki/Resistor_ladder
+
+calculations.ods
+------------
+This LibreOffice Calc file contains a table with calculations of the value for the ICR1 register for different PL-tone frequencies
