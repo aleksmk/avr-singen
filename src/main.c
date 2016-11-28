@@ -69,7 +69,7 @@ int main(void) {
     while(1); // Do nothing.
 }
 
-// OVERFLOW ISR
+// TIMER CAPTURE ISR
 ISR(TIMER1_CAPT_vect) {
     PORTB |= (1 << PB0);
 
