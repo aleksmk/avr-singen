@@ -39,9 +39,14 @@ uint8_t  sine[256] = {
 volatile uint8_t sineIndex = 0;
 
 volatile uint32_t phaseRegister = 0;
-volatile uint32_t M = 8904200UL;
+volatile uint32_t M = 3491843UL;
 
 int main(void) {
+
+    // In case that some bootloader does something with the UART.
+    UCSR0B = 0x00;
+
+
     // Debug pin - PB0
     DDRB |= (1 << PB0);
 
